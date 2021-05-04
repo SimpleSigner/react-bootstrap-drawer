@@ -1,12 +1,14 @@
 
 # react-bootstrap-drawer
 
-## Quick Start
+## Usage
+
+### Quick Start
 
 ```
 ```
 
-## Customization
+### Customization
 
 One can break-down the component into three core elements. The page in which the drawer resides, the drawer inside of the page, and the navigation inside of the drawer.
 
@@ -25,8 +27,8 @@ export const CustomNavigation = (props) => {
 			<DrawerNavigationHeader href="/">An Application</DrawerNavigationHeader>
 
 			<DrawerNavigation>
-				<!-- Standard react-bootstrap Nav.Item / Nav.Link -->
-				<!-- Caveat: CSS provides custom styles -->
+				{ /* Standard react-bootstrap Nav.Item / Nav.Link */ }
+				{ /* Caveat: CSS provides custom styles */ }
 				<Nav.Item>
 					<Nav.Link href="/">Home</Nav.Link>
 				</Nav.Item>
@@ -63,7 +65,7 @@ export const CustomDrawer = (props) => {
 			<Collapse in={ open }>
 				<DrawerOverflow>
 					<DrawerToC>
-						<!-- Your Navigation Goes Here -->
+						{ /* Your Navigation Goes Here */ }
 						<CustomNavigation />
 					</DrawerToC>
 				</DrawerOverflow>
@@ -82,13 +84,13 @@ import {
 	Row,
 } from 'react-bootstrap';
 
-import CustomDrawer from './CustomerDrawer';
+import CustomDrawer from './CustomDrawer';
 
 export const CustomPage = (props) => {
 	return (
 		<Container fluid>
 			<Row className="flex-xl-nowrap">
-				<Col as={ CustomerDrawer } xs={ 12 } md={ 3 } lg={ 2 } />
+				<Col as={ CustomDrawer } xs={ 12 } md={ 3 } lg={ 2 } />
 				<Col xs={ 12 } md={ 9 } lg={ 10 }>
 					{ props.children }
 				</Col>
