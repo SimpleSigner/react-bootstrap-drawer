@@ -51,6 +51,7 @@ import {
 	Drawer,
 	DrawerOverflow,
 	DrawerToC,
+	DrawerToggle,
 } from 'react-bootstrap-drawer';
 
 import CustomNavigation from './CustomNavigation';
@@ -62,6 +63,8 @@ export const CustomDrawer = (props) => {
 
 	return (
 		<Drawer className={ props.className }>
+			<DrawerToggle onClick={ handleToggle } />
+
 			<Collapse in={ open }>
 				<DrawerOverflow>
 					<DrawerToC>
