@@ -1,4 +1,4 @@
 
-export * from './Drawer.js';
-export * from './DrawerNavigation.js';
+export * from './Drawer';
+export * from './DrawerNavigation';
 
