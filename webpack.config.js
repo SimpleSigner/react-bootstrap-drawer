@@ -3,7 +3,7 @@ const path = require('path');
 const project = require('./package.json');
 
 module.exports = {
-	entry: './src/Drawer.jsx',
+	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'lib'),
 		filename: 'index.js',
