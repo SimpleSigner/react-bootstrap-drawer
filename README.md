@@ -100,7 +100,15 @@ export const CustomPage = (props) => {
 };
 ```
 
-## Credit
+## Notes
+
+### References
+
+- [react-bootstrap / Documentation / Example](https://react-bootstrap.github.io/components/alerts)
+- [react-bootstrap / Original Source / Components](https://github.com/react-bootstrap/react-bootstrap/blob/984e22702e811467a06dba084f18414adced47b4/www/src/components/Main.js#L67)
+- [react-bootstrap / Original Source / Component Usage](https://github.com/react-bootstrap/react-bootstrap/blob/984e22702e811467a06dba084f18414adced47b4/www/src/components/SideNav.js#L189)
+
+### Credit
 
 The real credit goes to the [react-bootstrap](https://github.com/react-bootstrap/) project for performing the development of this component. We have simply reverse-engineered their documents page and their source-code to provide a ready-made component that is as library-agnostic as possible.
 
