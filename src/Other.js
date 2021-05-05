@@ -4,7 +4,7 @@ import React from 'react';
 export const DrawerToggle = (props) => {
 	const { className, type, ...other } = props;
 	const typeActual = type || 'button';
-	const classNameActual = `sidebar-toggle p-0 d-md-none ml-3 btn btn-link btn-lg`.trim();
+	const classNameActual = `react-bootstrap-drawer-toggle p-0 d-md-none ml-3 btn btn-link btn-lg ${className || ''}`.trim();
 
 	return (
 		<button

@@ -3,7 +3,7 @@ import React from 'react';
 
 export const DrawerNavigationHeader = (props) => {
 	const { className, ...other } = props;
-	const classNameActual = `sidebar-toc-header nav-link ${className}`.trim();
+	const classNameActual = `react-bootstrap-drawer-toc-header nav-link ${className || ''}`.trim();
 
 	return (
 		<a
@@ -16,7 +16,7 @@ export const DrawerNavigationHeader = (props) => {
 
 export const DrawerNavigation = (props) => {
 	const { className, ...other } = props;
-	const classNameActual = `d-block nav ${className}`.trim();
+	const classNameActual = `d-block nav ${className || ''}`.trim();
 
 	return (
 		<div

@@ -4,7 +4,7 @@
   "description": "Drawer (Sidenav) Inspired by React Bootstrap Documentation",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -rf ./lib/ && webpack --mode production && cp ./src/style.css ./lib/style.css",
+    "build": "rm -rf ./lib/ && webpack --mode production && node-sass ./src/style.scss > ./lib/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
