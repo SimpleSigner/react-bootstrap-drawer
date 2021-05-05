@@ -12,7 +12,7 @@
 
 One can break-down the component into three core elements. The page in which the drawer resides, the drawer inside of the page, and the navigation inside of the drawer.
 
-```
+```javascript
 // CustomNavigation.js
 import React from 'react';
 import { Nav } from 'react-bootstrap';
@@ -42,7 +42,7 @@ export const CustomNavigation = (props) => {
 };
 ```
 
-```
+```javascript
 // CustomComponent.js
 import 'react-bootstrap-drawer/src/style.css';
 import React, { useState } from 'react';
@@ -78,7 +78,7 @@ export const CustomDrawer = (props) => {
 };
 ```
 
-```
+```javascript
 // CustomPage.js
 import React from 'react';
 import {
