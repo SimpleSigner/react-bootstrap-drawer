@@ -1,16 +1,16 @@
 
 import React from 'react';
 
-export const DrawerNavigation = (props) => {
+export const DrawerNavigationHeader = (props) => {
 	const { className, ...other } = props;
-	const classNameActual = `d-block nav ${className || ''}`.trim();
+	const classNameActual = `react-bootstrap-drawer-toc-header nav-link ${className || ''}`.trim();
 
 	return (
-		<div
+		<a
 			{ ...other }
 			className={ classNameActual }>
 			{ props.children }
-		</div>
+		</a>
 	);
 };
 

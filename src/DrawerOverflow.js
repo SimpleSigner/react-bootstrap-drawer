@@ -1,9 +1,9 @@
 
 import React from 'react';
 
-export const DrawerNavigation = (props) => {
+export const DrawerOverflow = (props) => {
 	const { className, ...other } = props;
-	const classNameActual = `d-block nav ${className || ''}`.trim();
+	const classNameActual = `react-bootstrap-drawer-overflow ${className || ''}`.trim();
 
 	return (
 		<div
