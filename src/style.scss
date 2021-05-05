@@ -45,14 +45,14 @@
 			color: #1a1a1a!important;
 		}
 
-		:not(.react-bootstrap-toc-header) {
+		&:not(.react-bootstrap-toc-header) {
 			font-size: 90%;
 			padding-top: .25rem;
 			text-decoration: none;
 			color: rgba(26,26,26,.75);
 			transition: color .2s ease-out;
 
-			:hover {
+			&:hover {
 				text-decoration: none;
 				color: #999;
 			}
