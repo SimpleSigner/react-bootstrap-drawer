@@ -2,13 +2,15 @@
 import React from 'react';
 
 export const DrawerToggle = (props) => {
-	const { onClick } = this.props;
+	const { className, type, ...other } = props;
+	const typeActual = type || 'button';
+	const classNameActual = `sidebar-toggle p-0 d-md-none ml-3 btn btn-link btn-lg`.trim();
 
 	return (
 		<button
-			type="button"
-			className="sidebar-toggle p-0 d-md-none ml-3 btn btn-link btn-lg"
-			onClick={ onClick }>
+			{ ...other }
+			type={ typeActual }
+			className={ classNameActual }>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 30 30"
