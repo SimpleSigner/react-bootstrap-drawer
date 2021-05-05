@@ -5,12 +5,58 @@
 
 ### Quick Start
 
-```
+```javascript
+import 'react-bootstrap-drawer/lib/style.css';
+import React, { useState } from 'react';
+import {
+	Col,
+	Collapse,
+	Container,
+	Row,
+} from 'react-bootstrap';
+import { Drawer, } from 'react-bootstrap-drawer';
+
+const ApplicationDrawer = (props) => {
+	const [open, setOpen] = useState(false);
+
+	const handleToggle = () => setOpen(!open);
+
+	return (
+		<Drawer { ...props }>
+			<Drawer.Toggle onClick={ handleToggle } />
+
+			<Collapse in={ open }>
+				<Drawer.Overflow>
+					<Drawer.ToC>
+						<Drawer.Header href="/">Application</Drawer.Header>
+
+						<Drawer.Nav>
+							<Drawer.Item href="/settings">Settings</Drawer.Item>
+						</Drawer.Nav>
+					</Drawer.ToC>
+				</Drawer.Overflow>
+			</Collapse>
+		</Drawer>
+	);
+};
+
+const Application = (props) => {
+	return (
+		<Container fluid>
+			<Row className="flex-xl-nowrap">
+				<Col as={ ApplicationDrawer } xs={ 12 } md={ 3 } lg={ 2 } />
+				<Col xs={ 12 } md={ 9 } lg={ 10 }>{ props.children }</Col>
+			</Row>
+		</Container>
+	);
+};
 ```
 
 ### Customization
 
-One can break-down the component into three core elements. The page in which the drawer resides, the drawer inside of the page, and the navigation inside of the drawer.
+Note: One can use either `Drawer.Component` or `DrawerComponent` similar to `react-bootstrap` imports.
+
+One can break-down usage into three core elements. The page in which the drawer resides, the drawer inside of the page, and the navigation inside of the drawer.
 
 ```javascript
 // CustomNavigation.js
@@ -44,7 +90,6 @@ export const CustomNavigation = (props) => {
 
 ```javascript
 // CustomComponent.js
-import 'react-bootstrap-drawer/src/style.css';
 import React, { useState } from 'react';
 import { Collapse } from 'react-bootstrap';
 import {
@@ -80,6 +125,7 @@ export const CustomDrawer = (props) => {
 
 ```javascript
 // CustomPage.js
+import 'react-bootstrap-drawer/src/style.css';
 import React from 'react';
 import {
 	Col,
