@@ -4,7 +4,7 @@
   "description": "Drawer (Sidenav) Inspired by React Bootstrap Documentation",
   "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --mode production && cp ./src/style.css ./lib/style.css",
+    "build": "rm -rf ./lib/ && webpack --mode production && cp ./src/style.css ./lib/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
