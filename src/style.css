@@ -29,9 +29,18 @@
 }
 
 .sidebar-toc-header {
-	font-weight: 500;
-	color: #1a1a1a !important;
 	margin-top: 1rem;
+}
+
+.sidebar-toc .nav-link {
+	text-decoration: none;
+	color: rgba(26,26,26,.75);
+	transition: color .2s ease-out;
+}
+
+.sidebar-toc .nav-link.active {
+	font-weight: 500;
+	color: #1a1a1a!important;
 }
 
 .sidebar-toc .nav-link:not(.sidebar-toc-header) {
@@ -40,6 +49,11 @@
 	text-decoration: none;
 	color: rgba(26,26,26,.75);
 	transition: color .2s ease-out;
+}
+
+.sidebar-toc .nav-link:not(.sidebar-toc-header):hover {
+	text-decoration: none;
+	color: #999;
 }
 
 .sidebar-toggle {
