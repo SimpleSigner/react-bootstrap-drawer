@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-drawer",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "description": "Drawer (Sidenav) Inspired by React Bootstrap Documentation",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "sidenav"
   ],
   "author": "Simple Signer",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/SimpleSigner/react-bootstrap-drawer/issues"
   },
