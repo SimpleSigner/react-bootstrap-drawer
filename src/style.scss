@@ -1,66 +1,62 @@
-
 @media (min-width: 768px) {
-	.react-bootstrap-drawer {
-		position: -webkit-sticky !important;
-		position: sticky !important;
-		top: 4rem;
-		z-index: 2234;
-		height: calc(100vh - 4rem);
-		border-right: 1px solid #ececec;
-	}
+  .react-bootstrap-drawer {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 4rem;
+    z-index: 2234;
+    height: calc(100vh - 4rem);
+    border-right: 1px solid #ececec;
+  }
 
-	.react-bootstrap-drawer-overflow {
-		display: block !important;
-		height: 100% !important;
-	}
+  .react-bootstrap-drawer-overflow {
+    display: block !important;
+    height: 100% !important;
+  }
 
-	.react-bootstrap-drawer-toc {
-		height: 100% !important;
-		overflow: auto;
-		margin-right: -15px;
-		padding-right: calc(15px + 1rem);
-	}
+  .react-bootstrap-drawer-toc {
+    height: 100% !important;
+    overflow: auto;
+  }
 }
 
 .react-bootstrap-drawer {
-	background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .react-bootstrap-drawer-toggle {
-	padding-top: 5px !important;
-	padding-bottom: 10px !important;
-	box-shadow: none !important;
-	color: #212529 !important;
-	font-size: 2rem !important;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+  box-shadow: none !important;
+  color: #212529 !important;
+  font-size: 2rem !important;
 }
 
 .react-bootstrap-drawer-toc {
-	.nav-link {
-		text-decoration: none;
-		color: rgba(26, 26, 26, 0.75);
-		transition: color .2s ease-out;
+  .nav-link {
+    text-decoration: none;
+    color: rgba(26, 26, 26, 0.75);
+    transition: color 0.2s ease-out;
 
-		&.active {
-			font-weight: 500;
-			color: #1a1a1a!important;
-		}
+    &.active {
+      font-weight: 500;
+      color: #1a1a1a !important;
+    }
 
-		&:not(.react-bootstrap-drawer-toc-header) {
-			font-size: 90%;
-			padding-top: .25rem;
-			text-decoration: none;
-			color: rgba(26,26,26,.75);
-			transition: color .2s ease-out;
+    &:not(.react-bootstrap-drawer-toc-header) {
+      font-size: 90%;
+      padding-top: 0.25rem;
+      text-decoration: none;
+      color: rgba(26, 26, 26, 0.75);
+      transition: color 0.2s ease-out;
 
-			&:hover {
-				text-decoration: none;
-				color: #999;
-			}
-		}
-	}
+      &:hover {
+        text-decoration: none;
+        color: #999;
+      }
+    }
+  }
 }
 
 .react-bootstrap-drawer-toc-header {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
-
