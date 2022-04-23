@@ -4,17 +4,29 @@ const path = require('path');
 
 const project = require('./package.json');
 
-
 module.exports = {
-	entry: './src/index.js',
+	entry: './src/index',
 	externals: [nodeExternals()],
 	module: {
 		rules: [
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.(jsx|js|tsx|ts)$/,
 				exclude: /node_modules/,
 				use: {
-					loader: 'babel-loader'
+					loader: 'babel-loader',
+					options: {
+						presets: [
+							'@babel/preset-env',
+							'@babel/preset-react',
+							[
+								'@babel/preset-typescript',
+								{
+									allExtensions: true,
+									isTSX: true,
+								}
+							],
+						],
+					},
 				},
 			},
 		],
@@ -26,7 +38,7 @@ module.exports = {
 		libraryTarget: 'umd',
 	},
 	resolve: {
-		extensions: ['.js',],
+		extensions: ['.jsx', '.js', '.tsx', '.ts'],
 	},
 };
 
