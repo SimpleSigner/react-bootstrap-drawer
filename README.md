@@ -1,6 +1,16 @@
 
 # react-bootstrap-drawer
 
+## Support
+
+This component was pulled from code written against react-bootstrap / Bootstrap 4. As such, only 4 is currently supported.
+
+| Bootstrap Version | react-bootstrap Version | react-boostrap-drawer Version |
+| --- | --- | --- |
+| 3 | 0.33.1 | N/A |
+| 4 | 1.6.x | 1.0.1 |
+| 5 | 2.4.0 | N/A |
+
 ## Usage
 
 ### Quick Start
